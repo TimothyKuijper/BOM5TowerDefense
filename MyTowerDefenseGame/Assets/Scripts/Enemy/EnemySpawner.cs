@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        //StartCoroutine(SpawnEnemy());
+        StartCoroutine(SpawnEnemy());
     }
 
     void Update()
@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
         while (true)
         {
             Instantiate(enemyPrefab);
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(2f);
         }
     }
 
