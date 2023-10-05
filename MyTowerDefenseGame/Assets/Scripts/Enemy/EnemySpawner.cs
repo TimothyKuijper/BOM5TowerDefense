@@ -11,18 +11,12 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(SpawnEnemy());
     }
 
-    void Update()
-    {
-        
-    }
-
     IEnumerator SpawnEnemy() 
     {
         while (true)
         {
             Instantiate(enemyPrefab);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(0.5f);
         }
     }
-
 }

@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class GetEnemy : MonoBehaviour
 {
-    [SerializeField] public GameObject Target;
+    [SerializeField] public GameObject target;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision == null){ return; }
 
-        if (Target != null) { return; }
+        if (target != null) { return; }
 
-        if (Target == null && collision.gameObject.CompareTag("Enemy"))
+        if (target == null && collision.gameObject.CompareTag("Enemy"))
         {
-            Target = collision.gameObject;
+            target = collision.gameObject;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject == Target)
+        if (collision.gameObject == target)
         {
-            Target = null;
+            target = null;
         }
     }
 }

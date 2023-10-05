@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3257156375392090581}
   - component: {fileID: 3257156375392090580}
-  - component: {fileID: 96308308365310671}
+  - component: {fileID: 6933358756466635162}
+  - component: {fileID: 8251545017930873233}
+  - component: {fileID: 8790087838376645157}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -86,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &96308308365310671
+--- !u!114 &6933358756466635162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,6 +101,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getEnemy: {fileID: 2305057302846037144}
+--- !u!114 &8251545017930873233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3257156375392090582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59439f730e739244a68d2825db0143a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getEnemy: {fileID: 2305057302846037144}
+  bullet: {fileID: 1892647726223980126, guid: 59f3324eb1b968a468a5031378b7ea88, type: 3}
+--- !u!114 &8790087838376645157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3257156375392090582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5e6d1b212cf7f44ab0cb1355e10b6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notOnPath: 1
 --- !u!1 &9063922829324777597
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,4 +189,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec26370fd742afd47aa536679b2c787e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
+  target: {fileID: 0}

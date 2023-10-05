@@ -9,7 +9,8 @@ public class Aim : MonoBehaviour
 
     void Update()
     {
-        Vector2 direction = getEnemy.Target.transform.position - transform.position;
+        if (getEnemy.target == null) { return; }
+        Vector2 direction = getEnemy.target.transform.position - transform.position;
         transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
     }
 }

@@ -8,6 +8,5 @@ public class MouseFollower : MonoBehaviour
     void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log(mousePos);
     }
 }

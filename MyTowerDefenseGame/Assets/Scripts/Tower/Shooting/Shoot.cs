@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] GetEnemy getEnemy;
+    [SerializeField] private GameObject bullet;
+    private GameObject bulletClone;
     void Start()
     {
-        
+        StartCoroutine(Shooting());
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    IEnumerator Shooting()
+    {
+        while (true) 
+        {
+            if (getEnemy.target != null)
+            {
+                Instantiate(bullet, transform);
+                    yield return new WaitForSeconds(0.5f);
+            }
+            yield return null;
+        }
     }
 }
