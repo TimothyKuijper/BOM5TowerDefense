@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class ProjectileBehaviour : MonoBehaviour
 {
-    [SerializeField] private float speed = 10;
     [SerializeField] public Transform target;
+    private Rigidbody2D rb;
+    public int damage;
     void Start()
     {
-        
-    }   
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        rb.AddForce(transform.up * 20, ForceMode2D.Impulse);
+        transform.parent = null;
+    }
 
     void Update()
     {
-        if (target == null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime * speed);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,7 +24,6 @@ public class ProjectileBehaviour : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-            Destroy(collision.gameObject);
         }
     }
 }
