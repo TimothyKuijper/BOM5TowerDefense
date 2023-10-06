@@ -5,7 +5,6 @@ using UnityEngine;
 public class WaypointFollower : MonoBehaviour
 {
     [SerializeField] private Path path;
-    [SerializeField] private float speed = 1;
     [SerializeField] private int nextWaypointIndex = 1;
     [SerializeField] private float reachedWaypointClearance = 0.25f;
 
@@ -21,7 +20,7 @@ public class WaypointFollower : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, path.waypoints[nextWaypointIndex].position, Time.deltaTime * speed);
+        transform.position = Vector3.MoveTowards(transform.position, path.waypoints[nextWaypointIndex].position, Time.deltaTime * 3);
         if (Vector3.Distance(transform.position, path.waypoints[nextWaypointIndex].position) <= reachedWaypointClearance) 
         {
             nextWaypointIndex++;
