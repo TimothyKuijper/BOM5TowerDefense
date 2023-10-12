@@ -6,7 +6,7 @@ public class WaypointFollower : MonoBehaviour
 {
     [SerializeField] private Path path;
     [SerializeField] public int nextWaypointIndex = 1;
-    [SerializeField] private float reachedWaypointClearance = 0.25f;
+    [SerializeField] private float reachedWaypointClearance = 0;
 
     private void Awake()
     {
