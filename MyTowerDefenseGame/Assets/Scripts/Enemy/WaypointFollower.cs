@@ -5,8 +5,8 @@ using UnityEngine;
 public class WaypointFollower : MonoBehaviour
 {
     [SerializeField] private Path path;
-    [SerializeField] private int nextWaypointIndex = 1;
-    [SerializeField] private float reachedWaypointClearance = 0.25f;
+    [SerializeField] public int nextWaypointIndex = 1;
+    [SerializeField] private float reachedWaypointClearance = 0;
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class WaypointFollower : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, path.waypoints[nextWaypointIndex].position, Time.deltaTime * 3);
+        transform.position = Vector3.MoveTowards(transform.position, path.waypoints[nextWaypointIndex].position, Time.deltaTime * 4);
         if (Vector3.Distance(transform.position, path.waypoints[nextWaypointIndex].position) <= reachedWaypointClearance) 
         {
             nextWaypointIndex++;
