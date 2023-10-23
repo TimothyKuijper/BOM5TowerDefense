@@ -7,26 +7,21 @@ public class Shoot : MonoBehaviour
     [SerializeField] GetEnemy getEnemy;
     [SerializeField] private GameObject bullet;
     private GameObject bulletClone;
-    void Start()
-    {
-        StartCoroutine(Shooting());
-    }
-
-    void Update()
-    {
-
-    }
 
     IEnumerator Shooting()
     {
         while (true) 
-        {
+        { 
             if (getEnemy.target != null)
             {
                 Instantiate(bullet, transform);
-                    yield return new WaitForSeconds(0.5f);
             }
-            yield return null;
+            yield return new WaitForSeconds(1f);
         }
+    }
+
+    public void StartShooting()
+    {
+        StartCoroutine(Shooting());
     }
 }

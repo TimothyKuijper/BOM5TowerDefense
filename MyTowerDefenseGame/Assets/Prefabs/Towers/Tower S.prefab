@@ -160,10 +160,10 @@ GameObject:
   - component: {fileID: 46046456438098555}
   - component: {fileID: 5783476313162975652}
   - component: {fileID: 1184592659001946008}
-  - component: {fileID: 800274497051932548}
+  - component: {fileID: 8779268060179821857}
   m_Layer: 0
-  m_Name: Firing
-  m_TagString: Untagged
+  m_Name: Bow
+  m_TagString: Bow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc8e4db5361c248458230ff261357faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getEnemy: {fileID: 0}
+  getEnemy: {fileID: 2458472586470117655}
 --- !u!114 &1184592659001946008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,9 +260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59439f730e739244a68d2825db0143a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getEnemy: {fileID: 0}
+  getEnemy: {fileID: 2458472586470117655}
   bullet: {fileID: 1892647726223980126, guid: 59f3324eb1b968a468a5031378b7ea88, type: 3}
---- !u!114 &800274497051932548
+--- !u!114 &8779268060179821857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,7 +271,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5394262552594608508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e5e6d1b212cf7f44ab0cb1355e10b6b, type: 3}
+  m_Script: {fileID: 11500000, guid: c7a05f5b333086c42b7abdbfd43cce10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notOnPath: 1
+  shoot: {fileID: 1184592659001946008}
+  towerplaced: 0

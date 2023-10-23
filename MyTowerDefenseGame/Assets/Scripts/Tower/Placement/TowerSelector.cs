@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class TowerSelector : MonoBehaviour
 {
-    [SerializeField] private GameObject tower;
+    [SerializeField] private GameObject towerS;
+    [SerializeField] private GameObject towerL;
     [SerializeField] public bool towerSelected = false;
     [SerializeField] public GameObject selectedTower;
-    public void SelectTower()
+    [SerializeField] public GameObject bow;
+    public void SelectTowerS()
     {
-        selectedTower = Instantiate(tower);
+        selectedTower = Instantiate(towerS);
+        towerSelected = true;
+    }
+
+    public void SelectTowerL()
+    {
+        selectedTower = Instantiate(towerL);
         towerSelected = true;
     }
 }

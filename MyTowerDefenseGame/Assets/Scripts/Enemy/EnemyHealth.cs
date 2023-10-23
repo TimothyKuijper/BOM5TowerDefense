@@ -14,7 +14,7 @@ public class EnemyHealth : MonoBehaviour
 
     void Update()
     {
-        if (Health < 0)
+        if (Health <= 0)
         {
             Destroy(gameObject);
         }
@@ -25,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile"))
         {
             bullet = collision.gameObject.GetComponent<ProjectileBehaviour>();
-            Health -= bullet.damage;
+            Health = Health - bullet.damage;
         }
     }
 }

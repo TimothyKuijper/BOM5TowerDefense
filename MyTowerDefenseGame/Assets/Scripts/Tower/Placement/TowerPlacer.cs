@@ -8,7 +8,7 @@ public class TowerPlacer : MonoBehaviour
     [SerializeField] DetermineIfPath ifPath;
     void Update()
     {
-        if (ifPath.notOnPath == true && towerSelector.towerSelected == true && Input.GetAxisRaw("Fire1") >= 0.1f)
+        if (towerSelector.towerSelected == true && Input.GetAxisRaw("Fire1") >= 0.1f)
         {
             towerSelector.towerSelected = false;
         }

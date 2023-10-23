@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - target
   - path
+  - Bow
   layers:
   - Default
   - TransparentFX
