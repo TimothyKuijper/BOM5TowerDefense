@@ -11,7 +11,7 @@ public class TakeDamage : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<EnemyHealth>();
-            playerHealth.health -= collision.gameObject.GetComponent<EnemyHealth>().Health;
+            playerHealth.health -= collision.gameObject.GetComponent<EnemyHealth>().Health / 2;
         }
     }
 }
