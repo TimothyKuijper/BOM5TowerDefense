@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: {fileID: 8105902760714742940}
+  getMoneyOnKill: {fileID: 7032753263157546083}
 --- !u!114 &5106534519971209469
 MonoBehaviour:
   m_ObjectHideFlags: 0

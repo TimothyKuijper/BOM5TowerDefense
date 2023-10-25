@@ -10,6 +10,6 @@ public class DisplayMoney : MonoBehaviour
 
     void Update()
     {
-        walletDisplay.text = "Balance: " + wallet.money;
+        walletDisplay.text = "Balance: $" + wallet.money;
     }
 }
