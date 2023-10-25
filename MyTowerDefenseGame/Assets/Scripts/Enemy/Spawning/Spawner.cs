@@ -18,7 +18,6 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             Instantiate(enemyPrefab);
-            //yield return new WaitForSeconds(spawnDelay);
             yield return new WaitForSeconds(Random.Range(0.3f, 0.9f));
         }
     }

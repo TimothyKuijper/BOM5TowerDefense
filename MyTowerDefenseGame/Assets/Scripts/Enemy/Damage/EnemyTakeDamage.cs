@@ -1,31 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class EnemyTakeDamage : MonoBehaviour
 {
-    [SerializeField] public int Health;
+    [SerializeField] private EnemyHealth enemyHealth;
     [SerializeField] private ProjectileBehaviour bullet;
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-        if (Health <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Projectile"))
         {
             bullet = collision.gameObject.GetComponent<ProjectileBehaviour>();
-            Health = Health - bullet.damage;
+            enemyHealth.Health = enemyHealth.Health - bullet.damage;
         }
     }
 }

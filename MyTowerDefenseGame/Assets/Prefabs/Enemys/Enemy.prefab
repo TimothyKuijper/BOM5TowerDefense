@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 4003290533825591288}
   - component: {fileID: 4003290533825591289}
   - component: {fileID: 4003290533825591290}
+  - component: {fileID: 8105902760714742940}
+  - component: {fileID: -137273762882108546}
+  - component: {fileID: 5106534519971209469}
+  - component: {fileID: 7032753263157546083}
   - component: {fileID: -5213792738180205108}
   - component: {fileID: 2891971197003118439}
-  - component: {fileID: 4716478940070301929}
   - component: {fileID: -6272811270461177340}
   m_Layer: 0
   m_Name: Enemy
@@ -104,6 +107,63 @@ MonoBehaviour:
   path: {fileID: 0}
   nextWaypointIndex: 1
   reachedWaypointClearance: 0.25
+--- !u!114 &8105902760714742940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003290533825591291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3812e358f7771e04a864a0ce93a5c836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 20
+--- !u!114 &-137273762882108546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003290533825591291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5995719c5ed932141a903c0acebd569c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: {fileID: 8105902760714742940}
+  getMoneyOnKill: {fileID: 7032753263157546083}
+--- !u!114 &5106534519971209469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003290533825591291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cebb5a9b891c6c4c820bcf30e57969e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: {fileID: 8105902760714742940}
+  bullet: {fileID: 0}
+--- !u!114 &7032753263157546083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003290533825591291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fcac53700d79849912fac80d00c57f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: {fileID: 8105902760714742940}
+  manager: {fileID: 0}
+  wallet: {fileID: 0}
+  reward: 20
 --- !u!58 &-5213792738180205108
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -141,20 +201,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4716478940070301929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4003290533825591291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3812e358f7771e04a864a0ce93a5c836, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 20
-  bullet: {fileID: 0}
 --- !u!95 &-6272811270461177340
 Animator:
   serializedVersion: 5
