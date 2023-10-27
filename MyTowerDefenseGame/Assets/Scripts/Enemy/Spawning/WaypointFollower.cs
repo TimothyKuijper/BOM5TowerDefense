@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class WaypointFollower : MonoBehaviour
+{
+    [SerializeField] private Path path;
+    [SerializeField] public int nextWaypointIndex = 1;
+    [SerializeField] private float reachedWaypointClearance = 0;
+
+    private void Awake()
+    {
+        path = FindAnyObjectByType<Path>();
+    }
+
+    void Start()
+    {
+        transform.position = path.waypoints[0].position;
+    }
+
+    void Update()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, path.waypoints[nextWaypointIndex].position, Time.deltaTime * 4);
+        if (Vector3.Distance(transform.position, path.waypoints[nextWaypointIndex].position) <= reachedWaypointClearance) 
+        {
+            nextWaypointIndex++;
+        }
+        if (nextWaypointIndex >= path.waypoints.Length) 
+        {
+            Destroy(gameObject);
+        }
+    }
+}
