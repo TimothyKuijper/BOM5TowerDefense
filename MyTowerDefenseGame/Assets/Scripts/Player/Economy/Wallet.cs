@@ -7,7 +7,7 @@ public class Wallet : MonoBehaviour
     public int money;
     void Start()
     {
-        money = 100;
+        money = 50;
     }
 
     void Update()

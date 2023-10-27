@@ -10,6 +10,8 @@ TagManager:
   - path
   - Bow
   - Manager
+  - Plot
+  - Tower
   layers:
   - Default
   - TransparentFX

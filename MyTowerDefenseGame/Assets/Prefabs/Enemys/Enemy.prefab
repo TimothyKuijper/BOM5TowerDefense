@@ -160,10 +160,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64fcac53700d79849912fac80d00c57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: {fileID: 8105902760714742940}
   manager: {fileID: 0}
   wallet: {fileID: 0}
-  reward: 20
+  reward: 10
 --- !u!58 &-5213792738180205108
 CircleCollider2D:
   m_ObjectHideFlags: 0
