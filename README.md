@@ -17,4 +17,30 @@ Dit is de [ROOT](WatchtowerWarriors) van mijn unity project.
 
 # SPRITES AND TEXTURES
 
-![GIF](WatchtowerWarriorsPreview.gif)
+sorry maar dit werkt niet door git gezeik 
+
+
+# ISSUES IN GITHUB
+
+ik heb hier niks voor te laten zien omdat ik niet tijden het maken van mijn bo opdracht aan deze readme heb gewerkt en nu al klaar ben dus geen bugs meer heb.
+
+
+# GAME DESIGN MET ONDERBOUWING
+
+ik ben niet vant voren bezig geweest met het idee van de game en ben gewoon aan de slag gegaan
+
+
+# CLASS DIAGRAMS
+
+
+aangezien mijn project uit 28 scripts bestaat en als spagheti door elkaar heen hangen heb ik na 3 uur proberen er iets van te maken dit opgegeven
+
+
+# 8 - 9 
+
+Ook hier kan ik niks voor laten zien omdat niet tijdens het maken van mijn game of een prototype heb gemaakt en ook totaal scrum over het hoofd heb gezien
+
+
+# GITFLOW 
+
+![](Visuals/NetworkGraph.png)
