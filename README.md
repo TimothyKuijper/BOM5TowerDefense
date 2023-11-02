@@ -12,28 +12,28 @@ Dit is de [ROOT](WatchtowerWarriors) van mijn unity project.
 
 # RELEASE
 
-
+Dit is de [release](https://github.com/TimothyKuijper/BOM5TowerDefense/releases) van mijn project.
 
 
 # SPRITES AND TEXTURES
 
-sorry maar dit werkt niet door git gezeik 
+Sorry maar dit werkt niet door git gezeik 
 
 
 # ISSUES IN GITHUB
 
-ik heb hier niks voor te laten zien omdat ik niet tijden het maken van mijn bo opdracht aan deze readme heb gewerkt en nu al klaar ben dus geen bugs meer heb.
+Ik heb hier niks voor te laten zien omdat ik niet tijden het maken van mijn bo opdracht aan deze readme heb gewerkt en nu al klaar ben dus geen bugs meer heb.
 
 
 # GAME DESIGN MET ONDERBOUWING
 
-ik ben niet vant voren bezig geweest met het idee van de game en ben gewoon aan de slag gegaan
+Ik ben niet vant voren bezig geweest met het idee van de game en ben gewoon aan de slag gegaan
 
 
 # CLASS DIAGRAMS
 
 
-aangezien mijn project uit 28 scripts bestaat en als spagheti door elkaar heen hangen heb ik na 3 uur proberen er iets van te maken dit opgegeven
+Aangezien mijn project uit 28 scripts bestaat en als spagheti door elkaar heen hangen heb ik na 3 uur proberen er iets van te maken dit opgegeven
 
 
 # 8 - 9 
